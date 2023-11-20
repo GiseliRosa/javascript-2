@@ -1,0 +1,22 @@
+function analisarImcs(){
+    var terminou = false
+    var pessoasComIMCMaior30 = 0
+    var totalPessoas = 0
+    var somaIMCs = 0
+
+    while (terminou == false){
+        totalPessoas++
+        var peso = parseFloat(prompt('Digite o seu peso'))
+        var altura = parseFloat(prompt('Digite sua altura'))
+        var imc = peso / altura ** 2
+        somaIMCs += imc
+        if(imc > 30) pessoasComIMCMaior30++
+        alert('Peso da pessoa = ' + imc)
+        var desejaTerminar = prompt('Deseja terminar? (S)im ou (N)ão')
+        if(desejaTerminar == 'S' desejaTerminar == 's'){
+        terminou = true
+        var mediaIMCs = somaIMCs / totalPessoas
+        alert('Programa ')
+        }
+    }
+}
